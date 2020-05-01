@@ -21,7 +21,8 @@ open class HashtagCollectionViewCell: UICollectionViewCell {
     lazy var wordLabel : UILabel = {
         let lbl = UILabel()
         lbl.textColor = UIColor.white
-        lbl.textAlignment = .center
+        lbl.textAlignment = .left
+        lbl.numberOfLines = 0
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
