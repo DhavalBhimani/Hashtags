@@ -268,9 +268,9 @@ extension HashtagView {
 
     open func addTag(tag: HashTag) {
         self.hashtags.append(tag)
-        self.collectionView.reloadData()
         self.superview?.setNeedsLayout()
         self.superview?.layoutIfNeeded()
+        self.collectionView.reloadData()
         self.invalidateIntrinsicContentSize()
 
         resize()
@@ -278,9 +278,9 @@ extension HashtagView {
 
     open func addTags(tags: [HashTag]) {
         self.hashtags.append(contentsOf: tags)
-        self.collectionView.reloadData()
         self.superview?.setNeedsLayout()
         self.superview?.layoutIfNeeded()
+        self.collectionView.reloadData()
         self.invalidateIntrinsicContentSize()
         resize()
     }
